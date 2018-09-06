@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// Butler
+@font-face {
+  font-family: 'Butler';
+  src: url('../fonts/Butler-Medium.woff2') format('woff2'),
+       url('../fonts/Butler-Medium.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+html, button, input, select, textarea, a, .pure-g [class *= "pure-u"] {
+  font-family: 'Lato', sans-serif;
+}
