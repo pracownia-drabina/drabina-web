@@ -40,6 +40,7 @@ $background-texture: "/images/lightpaperfibers.png";
   width: 100%;
   z-index: 3;
   height: 70px;
+  position: relative;
 }
 
 .header ul {
@@ -69,6 +70,7 @@ $background-texture: "/images/lightpaperfibers.png";
   width: 220px;
   text-decoration: none;
   position: relative;
+  margin-left: 10px;
 
   .logo-image {
     height: 61px;
@@ -207,6 +209,13 @@ $background-texture: "/images/lightpaperfibers.png";
 
 body {
   background: url($background-texture);
+  min-height: 100vh;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    height: 100px;
+  }
 }
 
 .cover-art {
@@ -216,6 +225,10 @@ body {
   background-position: center center;
   background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+  &.short-cover {
+    height: 300px;
+  }
 }
 
 .divider {
@@ -233,7 +246,8 @@ body {
 }
 
 .card {
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
   position: relative;
   .card-text {
     padding: 1em;
@@ -262,9 +276,13 @@ body {
       }
     }
 
-    p {
+    p, ul, li, a {
       text-align: justify;
       color: #545454;
+      text-shadow: 0 0 2px rgba(255,255,255,0.75);
+    }
+    li {
+      margin-top: 15px;
     }
   }
 
@@ -280,14 +298,14 @@ body {
     background-blend-mode: multiply;
     z-index: -2;
   }
-  &.splash-red::after    { background-image: url(/images/watercolor_red.jpg), url($background-texture); }
-  &.splash-yellow::after { background-image: url(/images/watercolor_yellow.jpg), url($background-texture); }
+  &.splash-red::after    { background-image: url(/images/watercolor_red_cut.jpg), url($background-texture); }
+  &.splash-yellow::after { background-image: url(/images/watercolor_yellow_cut.jpg), url($background-texture); }
   &.splash-right::after {
-    right: -50px;
+    right: 0px;
     transform: rotate(180deg);
   }
   &.splash-left::after {
-    left: -50px;
+    left: 0px;
   }
 }
 
@@ -295,13 +313,22 @@ body {
   position: relative;
   height: 340px;
   width: 480px;
+  max-width: 100vw;
   margin: 0 auto;
+  &.vertical-stack {
+    height: 450px;
+    & .polaroid {
+      height: 440px;
+      width: 340px;
+    }
+  }
 }
 .polaroid {
   position: absolute;
   left: 40px;
   width: 400px;
   height: 330px;
+  max-width: 70vw;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
@@ -312,10 +339,12 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   background: #333;
   color: #999;
   height: 100px;
-  padding: 30px 0;
+  padding: 30px 10px;
   width: 100%;
   clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
 }
