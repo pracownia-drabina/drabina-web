@@ -9,6 +9,7 @@
 // ---- VARIABLES ----
 $primary-red: #FB5252;
 $primary-orange: #FFE05B;
+$primary-green: #37D04E;
 
 $background-texture: "/images/lightpaperfibers.png";
 
@@ -81,9 +82,9 @@ $background-texture: "/images/lightpaperfibers.png";
 
   .logo-name {
     position: absolute;
-    top: 19px;
+    top: 17px;
     left: 48px;
-    font-size: 40px;
+    font-size: 42px;
     font-family: 'Butler', serif;
     color: #333;
   }
@@ -95,8 +96,8 @@ $background-texture: "/images/lightpaperfibers.png";
     text-transform: uppercase;
     position: absolute;
     top: 54px;
-    left: 50px;
-    letter-spacing: 0.2px;
+    left: 49px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -268,17 +269,14 @@ body {
         left: -12px;
         box-shadow: 0px 0px 20px 5px rgba(255,255,255,0.5);
       }
-      &.circle-red::after {
-        background: $primary-red;
-      }
-      &.circle-yellow::after {
-        background: $primary-orange;
-      }
+      &.circle-red::after { background: $primary-red; }
+      &.circle-yellow::after { background: $primary-orange; }
+      &.circle-green::after { background: $primary-green; }
     }
 
     p, ul, li, a {
       text-align: justify;
-      color: #545454;
+      color: #464646;
       text-shadow: 0 0 2px rgba(255,255,255,0.75);
     }
     li {
@@ -300,6 +298,7 @@ body {
   }
   &.splash-red::after    { background-image: url(/images/watercolor_red_cut.jpg), url($background-texture); }
   &.splash-yellow::after { background-image: url(/images/watercolor_yellow_cut.jpg), url($background-texture); }
+  &.splash-green::after { background-image: url(/images/watercolor_green_cut.jpg), url($background-texture); }
   &.splash-right::after {
     right: 0px;
     transform: rotate(180deg);
