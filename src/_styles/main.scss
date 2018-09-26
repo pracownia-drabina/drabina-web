@@ -68,7 +68,7 @@ $background-texture: "/images/lightpaperfibers.png";
   display: block;
   float: left;
   height: 70px;
-  width: 220px;
+  width: 195px;
   text-decoration: none;
   position: relative;
   margin-left: 10px;
@@ -115,7 +115,7 @@ $background-texture: "/images/lightpaperfibers.png";
   cursor: pointer;
   display: block;
   float: right;
-  padding: 28px 20px;
+  padding: 34px 20px;
   position: relative;
   user-select: none;
 }
@@ -155,7 +155,7 @@ $background-texture: "/images/lightpaperfibers.png";
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 290px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -175,9 +175,7 @@ $background-texture: "/images/lightpaperfibers.png";
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
+@media (min-width: 820px) {
   .header li {
     float: left;
   }
