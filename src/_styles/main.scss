@@ -90,14 +90,36 @@ $background-texture: "/images/lightpaperfibers.png";
   }
 
   .logo-slogan {
-    font-size: 8px;
+    font-size: 8.2px;
     font-family: 'Lato', sans-serif;
     color: #909090;
     text-transform: uppercase;
     position: absolute;
-    top: 54px;
-    left: 49px;
+    top: 55px;
+    left: 50px;
     letter-spacing: 0.5px;
+  }
+}
+
+.header .social {
+  float: left;
+  padding: 23px;
+  a {
+    display: block;
+    float: left;
+    text-indent: -99999px;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url('/images/fb.svg');
+    background-size: 24px 24px;
+    opacity: .2;
+    transition-duration: 0.5s;
+    position: relative;
+    top: 4px;
+    &:hover { 
+      opacity: .4; 
+    }
   }
 }
 
@@ -272,7 +294,7 @@ body {
       &.circle-green::after { background: $primary-green; }
     }
 
-    h3 {
+    h3, h4 {
       font-family: 'Butler', serif;
       font-size: 1.7em;
       font-weight: 500;
@@ -280,10 +302,17 @@ body {
       margin-bottom: 5px;
     }
 
+    h4 {
+      font-size: 1.2em;
+    }
+
     p, ul, li, a {
       text-align: justify;
-      color: #464646;
+      color: #333333;
       text-shadow: 0 0 2px rgba(255,255,255,0.75);
+    }
+    p {
+      line-height: 1.5em;
     }
     a:hover {
       color: #aaaaaa;
@@ -304,17 +333,14 @@ body {
     background-position: right;
     background-blend-mode: multiply;
     z-index: -2;
+    opacity: .9;
   }
   &.splash-red::after    { background-image: url(/images/watercolor_red_cut.jpg), url($background-texture); }
   &.splash-yellow::after { background-image: url(/images/watercolor_yellow_cut.jpg), url($background-texture); }
   &.splash-green::after { background-image: url(/images/watercolor_green_cut.jpg), url($background-texture); }
-  &.splash-right::after {
-    right: 0px;
-    transform: rotate(180deg);
-  }
-  &.splash-left::after {
-    left: 0px;
-  }
+  &.splash-right::after { right: -80px; transform: rotate(180deg); }
+  &.splash-left::after { left: -80px; }
+  &.splash-super-right::after { right: -40vw; transform: rotate(180deg); }
 }
 
 .polaroid-stack {
@@ -323,6 +349,7 @@ body {
   width: 480px;
   max-width: 100vw;
   margin: 0 auto;
+  margin-top: calc(50% - 170px);
   &.vertical-stack {
     height: 450px;
     & .polaroid {
