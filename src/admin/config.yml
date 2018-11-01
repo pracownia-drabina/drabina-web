@@ -7,6 +7,7 @@ public_folder: "images/uploads"
 collections:
   - label: "Strony"
     name: "pages"
+    delete: false
     files:
       - label: "Główna"
         name: "main"
