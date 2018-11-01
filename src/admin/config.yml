@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "src/_images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Post"
+    folder: "src/blog"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post.template"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
