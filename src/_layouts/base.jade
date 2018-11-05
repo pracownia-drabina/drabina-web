@@ -10,9 +10,14 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-  title Pracownia Drabina
-  meta(name='description', content='Pracownia Rozwoju i Terapii Drabina - Kraków. Jestem psychologiem, terapeutką, specjalizującą się w pomocy dzieciom i młodzieży. Staram się zrozumieć, gdzie leży źródło występujących problemów i dostosować metody terapeutyczne do indywidualnych potrzeb. Moim głównym celem jest stworzenie takiej przestrzeni, w której, jak przy wspinaniu po szczeblach drabiny, możliwe będzie sięganie po coś, co jest wyżej, gdzie każdy kolejny szczebel to krok w górę, ponad siebie, ponad własne lęki, ograniczenia i trudności.')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+  title
+    block page_title
+    | | Pracownia rozwoju i terapii Drabina
+      
+  block metatags
+    meta(name='description', content='Terapia i Sztuka. Jestem psychologiem, terapeutką, specjalizującą się w pomocy dzieciom i młodzieży. Staram się zrozumieć, gdzie leży źródło występujących problemów i dostosować metody terapeutyczne do indywidualnych potrzeb. Moim głównym celem jest stworzenie takiej przestrzeni, w której, jak przy wspinaniu po szczeblach drabiny, możliwe będzie sięganie po coś, co jest wyżej, gdzie każdy kolejny szczebel to krok w górę, ponad siebie, ponad własne lęki, ograniczenia i trudności.')
   
   //- favicons
   link(rel='apple-touch-icon', sizes='180x180', href='/images/favicons/apple-touch-icon.png')
@@ -70,7 +75,18 @@ body
   
   footer
     .base-width
-      | Drabina | Copyright 2018
+      span Pracownia Drabina | Copyright 2018
+      ul.footer-menu
+        li
+          a(href='/') Terapia
+        li
+          a(href='/o-mnie.html') O mnie
+        li
+          a(href='/oferta.html') Oferta
+        li
+          a(href='/w-gore-razem.html') W górę razem!
+        li
+          a(href='/kontakt.html') Kontakt
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')
