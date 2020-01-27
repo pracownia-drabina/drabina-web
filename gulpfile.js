@@ -6,10 +6,12 @@ var browserSyncLib = require('browser-sync');
 var pjson = require('./package.json');
 var minimist = require('minimist');
 var glob = require('glob');
+var imagemin = require('imagemin');
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
 var plugins = gulpLoadPlugins();
+plugins.imagemin.jpegtran = require('imagemin-jpegtran');
 
 var config = pjson.config;
 config.defaultNotification = function(err) {
@@ -35,30 +37,26 @@ glob.sync('./gulp/**/*.js').filter(function(file) {
   require(file)(gulp, plugins, args, config, taskTarget, browserSync);
 });
 
-// Default task
-gulp.task('default', ['clean'], function() {
-  gulp.start('build');
-});
-
 // Build production-ready code
-gulp.task('build', [
-  'copy',
-  'imagemin',
-  'jade',
-  'sass',
-  'browserify'
-]);
+gulp.task('build', 
+  gulp.parallel('copy',
+  gulp.parallel('imagemin',
+  gulp.parallel('jade',
+  gulp.parallel('sass', 'browserify'))))
+);
 
 // Server tasks with watch
-gulp.task('serve', [
-  'imagemin',
-  'copy',
-  'jade',
-  'sass',
-  'browserify',
-  'browserSync',
-  'watch'
-]);
+gulp.task('serve',
+  gulp.parallel('imagemin',
+  gulp.parallel('copy',
+  gulp.parallel('jade',
+  gulp.parallel('sass',
+  gulp.parallel('browserify',
+  gulp.parallel('browserSync', 'watch'))))))
+);
 
 // Testing
-gulp.task('test', ['eslint']);
+gulp.task('test', gulp.parallel('eslint'));
+
+// Default task
+gulp.task('default', gulp.series('clean', 'build'));
