@@ -331,7 +331,7 @@ body {
     background-position: right;
     background-blend-mode: multiply;
     z-index: -2;
-    opacity: .75;
+    opacity: .5;
   }
   &.splash-red::after    { background-image: url(/images/watercolor_red_cut.jpg), url($background-texture); }
   &.splash-yellow::after { background-image: url(/images/watercolor_yellow_cut.jpg), url($background-texture); }
