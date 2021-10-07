@@ -240,7 +240,7 @@ body {
 .cover-art {
   height: 400px;
   overflow: hidden;
-  background-image: url('/images/children-lined-up.jpg');
+  background-image: url('/images/people-lined-up.jpg');
   background-position: center center;
   background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
@@ -381,7 +381,9 @@ body {
 .card-table {
   background: rgba(255,255,255,.75);
   width: 100%;
-  box-shadow: 1px 1px 8px rgba(0,0,0,.3)
+  table-layout: fixed;
+  box-shadow: 1px 1px 8px rgba(0,0,0,.3);
+  margin-top: 40px;
 }
 
 footer {
@@ -408,4 +410,11 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+.big-link {
+  font-family: 'Butler', serif;
+  font-size: 2em;
+  font-weight: normal;
+  text-decoration: none;
 }
