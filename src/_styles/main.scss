@@ -412,9 +412,27 @@ footer {
   }
 }
 
+.oferta-container {
+  padding: 10px;
+}
+
 .big-link {
   font-family: 'Butler', serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: normal;
   text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: rgba(255,255,255,.75);
+  box-shadow: 1px 1px 8px rgba(0,0,0,.3);
+
+  &:hover {
+    background: rgba(255,255,255,1);
+  }
 }
