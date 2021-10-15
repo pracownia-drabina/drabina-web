@@ -412,8 +412,17 @@ footer {
   }
 }
 
+.oferta-cards-row {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}
+
 .oferta-container {
-  padding: 10px;
+  flex: 1;
+  padding: 30px 10px;
 }
 
 .big-link {
@@ -434,5 +443,6 @@ footer {
 
   &:hover {
     background: rgba(255,255,255,1);
+    box-shadow: 1px 1px 8px rgba(0,0,0,.5);
   }
 }
