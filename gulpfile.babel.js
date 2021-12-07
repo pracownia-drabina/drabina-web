@@ -16,7 +16,6 @@ glob.sync('./gulp/tasks/**/*.js').filter(function(file) {
 gulp.task('build', gulp.series(
   gulp.parallel(
     'copy',
-    'imagemin',
     'pug',
     'sass',
     'browserify'
@@ -27,7 +26,6 @@ gulp.task('build', gulp.series(
 // Server tasks with watch
 gulp.task('serve', gulp.series(
   gulp.parallel(
-    'imagemin',
     'copy',
     'pug',
     'sass',
