@@ -11,6 +11,29 @@
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
     CMS.registerPreviewStyle("/admin/styles.css");
+
+    var CennikPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var cenniki = entry.getIn(['data', 'cenniki']);
+
+        return h('div', {},
+          this.props.widgetsFor('cenniki').map(function(cennik, index) {
+            return h('table', {key: index, border: "1"},
+              h('thead', {}, h('tr', {}, h('th', { colspan: "2" }, cennik.getIn(['data', 'nazwa']) ))),
+              cennik.getIn(['data', 'pozycje']).map(function(pozycja, index) {
+                return h('tr', {key: index},
+                  h('td', {}, pozycja.get('nazwa')),
+                  h('td', {}, pozycja.get('cena'))
+                );
+              })
+            );
+          })
+        );
+      }
+    });
+
+    CMS.registerPreviewTemplate("cennik", CennikPreview);
   </script>
 </body>
 </html>

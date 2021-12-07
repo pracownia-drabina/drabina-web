@@ -33,7 +33,7 @@ collections:
           - label: Terapeuci
             name: terapeuci
             widget: list
-            collapsed: false
+            collapsed: true
             fields:
               - label: "Imię"
                 name: "imie"
@@ -73,7 +73,7 @@ collections:
               - label: "Pozycje"
                 name: "pozycje"
                 widget: "list"
-                collapsed: false
+                collapsed: true
                 fields:
                   - label: "Nazwa"
                     name: "nazwa"
