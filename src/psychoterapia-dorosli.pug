@@ -11,14 +11,5 @@ block content
 
   section.card.splash.splash-green.splash-super-right
     .base-width.pure-g
-      .card-text.pure-u-1
-        h2.circle-green Psychoterapia dorosłych
-        h4 Psychoterapia osób dorosłych w zakresie szeroko rozumianego cierpienia psychicznego i emocjonalnego, tj.:
-        ul
-            li depresja
-            li nerwice
-            li zaburzenia lękowe
-            li problemy somatyczne (m.in. chroniczne bóle głowy, kręgosłupa, problemy jelitowe i żołądkowe, drżenie rąk i nóg, omdlenia)
-            li trudności w relacjach
-            li żałoba
-            li sytuacje kryzysowe
+      .card-text.pure-u-1.circle-green
+        != marked(site.data.oferta_dorosli.body)

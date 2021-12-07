@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: pastpatryk/drabina-web
-  branch: admin
+  branch: cms-pages
 media_folder: "src/_images/uploads"
 public_folder: "images/uploads"
 
@@ -44,3 +44,47 @@ collections:
               - label: "Opis"
                 name: "opis"
                 widget: "markdown"
+      - label: "Oferta Dorośli"
+        name: "oferta_dorosli"
+        file: "src/_data/oferta_dorosli.yml"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
+      - label: "Oferta Dzieci"
+        name: "oferta_dzieci"
+        file: "src/_data/oferta_dzieci.yml"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
+      - label: "Cennik"
+        name: "cennik"
+        file: "src/_data/cennik.yml"
+        fields:
+          - label: Cenniki
+            name: cenniki
+            widget: list
+            collapsed: false
+            fields:
+              - label: "Nazwa"
+                name: "nazwa"
+                widget: "string"
+              - label: "Pozycje"
+                name: "pozycje"
+                widget: "list"
+                collapsed: false
+                fields:
+                  - label: "Nazwa"
+                    name: "nazwa"
+                    widget: "string"
+                  - label: "Cena"
+                    name: "cena"
+                    widget: "string"
+      - label: "Kontakt"
+        name: "kontakt"
+        file: "src/_data/kontakt.yml"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
