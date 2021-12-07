@@ -13,36 +13,14 @@ block content
     .base-width.pure-g
       .card-text.pure-u-1
         h2.circle-green Cennik
-        table.pure-table.pure-table-striped.card-table(style="margin-top: 40px;")
-            thead
-                tr
-                    th(colspan="2") Psychoterapia dzieci i młodzieży
-            tr
-                td Terapia indywidualna (45min)
-                td 120zł
-            tr
-                td Konsultacja psychologiczna (50min)
-                td 140zł
-            tr
-                td Diagnoza psychologiczna
-                td zależy od ilości spotkań konsultacyjnych
-            tr
-                td Opinia psychologiczna
-                td 100zł
-            tr
-                td Zajecia grupowe (1 godz.)
-                td 100zł/os
-            tr
-                td Warsztaty i szkolenia
-                td Cena do uzgodnienia
-        p
-        table.pure-table.pure-table-striped.card-table(style="")
-            thead
-                tr
-                    th(colspan="2") Psychoterapia dorosłych
-            tr
-                td Konsultacja psychoterapeutyczna (50min)
-                td 120zł
-            tr
-                td Sesja psychoterapeutyczna (50min)
-                td 120zł
+
+        each cennik in site.data.cennik.cenniki
+            table.pure-table.pure-table-striped.card-table
+                thead
+                    tr
+                        th(colspan="2")= cennik.nazwa
+                each pozycja in cennik.pozycje
+                    tr
+                        td= pozycja.nazwa
+                        td= pozycja.cena
+            p
