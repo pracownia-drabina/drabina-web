@@ -3,11 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~3.4.1",
-    "jstransformer-markdown-it": "^2.1.0",
-    "marked": "^4.0.6",
-    "normalize.css": "~8.0.1",
-    "sass": "^1.44.0",
-    "sass-loader": "^12.4.0"
+    "normalize.css": "~8.0.1"
   },
   "devDependencies": {
     "@babel/core": "~7.0.0",
@@ -43,17 +39,20 @@
     "gulp-rev": "9.0.0",
     "gulp-rev-delete-original": "0.2.3",
     "gulp-rev-rewrite": "2.0.0",
-    "gulp-sass": "~4.0.2",
+    "gulp-sass": "~5.0.0",
     "gulp-sourcemaps": "~2.6.5",
     "gulp-uglify": "~3.0.2",
     "imagemin-pngquant": "~7.0.0",
     "imagemin-svgo": "~7.0.0",
     "js-yaml": "~3.13.0",
+    "jstransformer-markdown-it": "^2.1.0",
     "lodash": "~4.17.4",
+    "marked": "^4.0.6",
     "minimist": "~1.2.2",
     "prettier": "~1.16.4",
     "pug": "~2.0.4",
     "rimraf": "2.6.3",
+    "sass": "^1.44.0",
     "vinyl-buffer": "~1.0.1",
     "vinyl-source-stream": "~2.0.0",
     "watchify": "~3.11.0 "

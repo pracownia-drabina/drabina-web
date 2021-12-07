@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: pastpatryk/drabina-web
-  branch: master
+  branch: admin
 media_folder: "src/_images/uploads"
 public_folder: "images/uploads"
 
@@ -26,3 +26,21 @@ collections:
           - label: "Sztuka opis"
             name: "sztuka_body"
             widget: "markdown"
+      - label: "Terapeuci"
+        name: "terapeuci"
+        file: "src/_data/terapeuci.yml"
+        fields:
+          - label: Terapeuci
+            name: terapeuci
+            widget: list
+            collapsed: false
+            fields:
+              - label: "Imię"
+                name: "imie"
+                widget: "string"
+              - label: "Zdjęcie"
+                name: "photo"
+                widget: "image"
+              - label: "Opis"
+                name: "opis"
+                widget: "markdown"
