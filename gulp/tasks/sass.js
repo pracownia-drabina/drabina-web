@@ -7,6 +7,10 @@ import gulp from 'gulp';
 import fancyLog from 'fancy-log';
 import { plugins, args, config, taskTarget, browserSync } from '../utils';
 
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass( dartSass );
+
 let dirs = config.directories;
 let entries = config.entries;
 let dest = path.join(taskTarget, dirs.styles.replace(/^_/, ''));
@@ -18,7 +22,7 @@ gulp.task('sass', () => {
     .pipe(plugins.plumber())
     .pipe(gulpif(!args.production, plugins.sourcemaps.init({ loadMaps: true })))
     .pipe(
-      plugins.sass({
+      sass({
         outputStyle: 'expanded',
         precision: 10,
         includePaths: [

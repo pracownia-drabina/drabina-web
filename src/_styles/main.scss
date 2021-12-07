@@ -292,6 +292,10 @@ body {
       &.circle-green::after { background: $primary-green; }
     }
 
+    &.circle-red h2::after { background: $primary-red; }
+    &.circle-yellow h2::after { background: $primary-orange; }
+    &.circle-green h2::after { background: $primary-green; }
+
     h3, h4 {
       font-family: 'Butler', serif;
       font-size: 1.7em;

@@ -8,6 +8,7 @@ import yaml from 'js-yaml';
 import gulp from 'gulp';
 import fancyLog from 'fancy-log';
 import { plugins, args, config, taskTarget, browserSync } from '../utils';
+import { marked } from "marked";
 
 let dirs = config.directories;
 let dest = path.join(taskTarget);
@@ -63,7 +64,8 @@ gulp.task('pug', () => {
             debug: true,
             site: {
               data: siteData
-            }
+            },
+            marked: marked,
           }
         })
       )

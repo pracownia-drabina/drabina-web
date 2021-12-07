@@ -19,10 +19,9 @@ block content
 
   section.card.splash.splash-red.splash-right#terapia
     .base-width.pure-g
-      .card-text.pure-u-1.pure-u-md-1-2
-        h2.circle-red Dlaczego Drabina?
-        p Pracownia „DRABINA” jest miejscem, które specjalizuje się w pomocy dzieciom, młodzieży, dorosłym oraz całym rodzinom. Staramy się zrozumieć, gdzie leży źródło występujących problemów i dostosować metody terapeutyczne do indywidualnych potrzeb. 
-        p Naszym celem jest stworzenie takiej przestrzeni, w której, jak przy wspinaniu po szczeblach drabiny, możliwe będzie sięganie po coś, co jest wyżej, gdzie każdy kolejny szczebel to krok w górę, ponad siebie, ponad własne lęki, stare schematy, ograniczenia i trudności.
+      .card-text.pure-u-1.pure-u-md-1-2.circle-red
+        h2= site.data.main.about_title
+        != marked(site.data.main.about_body)
       .card-photo.pure-u-1.pure-u-md-1-2
         .polaroid-stack
           .polaroid(style="background-image: url('/images/drabina2.jpg'); transform: rotate(-10deg);")
@@ -38,7 +37,6 @@ block content
         .polaroid-stack
           .polaroid(style="background-image: url('/images/dance.jpg'); transform: rotate(10deg);")
           .polaroid(style="background-image: url('/images/dance.jpg'); transform: rotate(-10deg);")
-      .card-text.pure-u-1.pure-u-md-1-2
-        h2.circle-yellow Sztuka
-        p Działalność twórcza ma ogromny wpływ na rozwój młodego człowieka. Kształtuje zdolność syntezy i analizy, doskonali pamięć (motoryczną, wzrokową, słuchową), ułatwia komunikację, wzbogaca zasób słownictwa, sprzyja budowaniu silnych więzi. Jej wpływ na osobowość dziecka wyraża się m.in. w stwarzaniu sytuacji, dzięki którym młody człowiek zdobywa nowe doświadczenia i przeżycia, odblokowuje zahamowania i niweluje napięcia emocjonalne.
-        p Skutkiem tych działań jest wyższa samoocena, pewność siebie w kontaktach z rówieśnikami i osobami dorosłymi, przełamywanie barier komunikacyjnych, nauka nowych umiejętności społecznych. Działalność twórcza wykorzystywana w terapii rodzin może poprawiać jakość komunikacji między jej członkami,  niwelować napięcia psychosomatyczne, kontaktować się z emocjami i docierać do ukrytych konfliktów. Sztuka, odpowiednio stosowana i dopasowana do indywidualnych potrzeb, stanowi potężne narzędzie terapeutyczne.
+      .card-text.pure-u-1.pure-u-md-1-2.circle-yellow
+        h2= site.data.main.sztuka_title
+        != marked(site.data.main.sztuka_body)
