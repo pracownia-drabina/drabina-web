@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
-  repo: pastpatryk/drabina-web
-  branch: cms-pages
+  branch: master
 media_folder: "src/_images/uploads"
 public_folder: "images/uploads"
 
