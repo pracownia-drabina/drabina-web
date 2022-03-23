@@ -14,18 +14,10 @@ collections:
         name: "main"
         file: "src/_data/main.yml"
         fields:
-          - label: "Nagłówek"
-            name: "about_title"
-            widget: "string"
-          - label: "Opis"
-            name: "about_body"
-            widget: "markdown"
-          - label: "Sztuka"
-            name: "sztuka_title"
-            widget: "string"
-          - label: "Sztuka opis"
-            name: "sztuka_body"
-            widget: "markdown"
+          - {label: "Nagłówek", name: "about_title", widget: "string"}
+          - {label: "Opis", name: "about_body", widget: "markdown"}
+          - {label: "Sztuka", name: "sztuka_title", widget: "string"}
+          - {label: "Sztuka opis", name: "sztuka_body", widget: "markdown"}
       - label: "Terapeuci"
         name: "terapeuci"
         file: "src/_data/terapeuci.yml"
@@ -35,29 +27,19 @@ collections:
             widget: list
             collapsed: true
             fields:
-              - label: "Imię"
-                name: "imie"
-                widget: "string"
-              - label: "Zdjęcie"
-                name: "photo"
-                widget: "image"
-              - label: "Opis"
-                name: "opis"
-                widget: "markdown"
+              - {label: "Imię", name: "imie", widget: "string"}
+              - {label: "Zdjęcie", name: "photo", widget: "image"}
+              - {label: "Opis", name: "opis", widget: "markdown"}
       - label: "Oferta Dorośli"
         name: "oferta_dorosli"
         file: "src/_data/oferta_dorosli.yml"
         fields:
-          - label: "Treść"
-            name: "body"
-            widget: "markdown"
+          - {label: "Treść", name: "body", widget: "markdown"}
       - label: "Oferta Dzieci"
         name: "oferta_dzieci"
         file: "src/_data/oferta_dzieci.yml"
         fields:
-          - label: "Treść"
-            name: "body"
-            widget: "markdown"
+          - {label: "Treść", name: "body", widget: "markdown"}
       - label: "Cennik"
         name: "cennik"
         file: "src/_data/cennik.yml"
@@ -67,24 +49,24 @@ collections:
             widget: list
             collapsed: false
             fields:
-              - label: "Nazwa"
-                name: "nazwa"
-                widget: "string"
+              - {label: "Nazwa", name: "nazwa", widget: "string"}
               - label: "Pozycje"
                 name: "pozycje"
                 widget: "list"
                 collapsed: true
                 fields:
-                  - label: "Nazwa"
-                    name: "nazwa"
-                    widget: "string"
-                  - label: "Cena"
-                    name: "cena"
-                    widget: "string"
+                  - {label: "Nazwa", name: "nazwa", widget: "string"}
+                  - {label: "Cena", name: "cena", widget: "string"}
       - label: "Kontakt"
         name: "kontakt"
         file: "src/_data/kontakt.yml"
         fields:
-          - label: "Treść"
-            name: "body"
-            widget: "markdown"
+          - {label: "Treść", name: "body", widget: "markdown"}
+  - label: "Aktualności"
+    name: "aktualnosci"
+    folder: "src/_data/aktualnosci"
+    create: true
+    fields:
+      - {label: "Nagłówek", name: "title", widget: "string"}
+      - {label: "Treść", name: "body", widget: "string"}
+      - {label: "Zdjęcie", name: "image", widget: "image"}

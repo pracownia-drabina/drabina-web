@@ -1,5 +1,7 @@
 # Drabina Web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4c182ba-e220-4f41-b72a-323792e6bbfb/deploy-status)](https://app.netlify.com/sites/pracownia-drabina/deploys)
+
 Bulit using gulp, pug templates and [Netlify CMS](https://www.netlifycms.org/)
 
 ## Setup
@@ -34,4 +36,4 @@ After saving changes it will automatically create a new commit on a `master` bra
 
 ## Deployment
 
-Deployment to [pracowniadrabina.pl](https://pracowniadrabina.pl/) is done automatically on every merge to `master` branch using [Netlify]()
+Deployment to [pracowniadrabina.pl](https://pracowniadrabina.pl/) is done automatically on every merge to `master` branch using [Netlify](https://netlify.com)
