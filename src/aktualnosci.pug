@@ -1,9 +1,8 @@
 extends _layouts/base
 
-- var aktualnosci = site.data.aktualnosci.values().sort(function(a, b){ return b.date - a.date })
 
 block page_title
-  | Kontakt - 
+  | Aktualności - 
 
 block metatags
   meta(name='description', content='Zadzwoń i umów się na spotkanie. Terapia i sztuka. erapia  indywidualna oraz grupowa dla dzieci i młodzieży z trudnościami emocjonalnymi, zachowaniami trudnymi oraz z objawami ze spektrum autyzmu.')
@@ -11,9 +10,11 @@ block metatags
 block content
   .cover-art.short-cover
 
+  - var posts = Object.values(site.data.aktualnosci).sort(function(a, b){ return b.date - a.date });
   section.card.splash.splash-yellow.splash-right(style="min-height: 350px;")
     .base-width.pure-g
-      each post, index in site.data.aktualnosci
+      each post, index in posts
         .card-text.pure-u-1.pure-u-md-1
-          h2(class="circle-" + (['green', 'yellow', 'red'][index % 3]))= post.title
+          h2.circle(class="circle-" + (['green', 'yellow', 'red'][index % 3]))= post.title
+          time.post-date= post.date.toLocaleDateString('pl-PL')
           != marked(post.body)
