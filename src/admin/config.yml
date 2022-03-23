@@ -6,6 +6,15 @@ media_folder: "src/_images/uploads"
 public_folder: "images/uploads"
 
 collections:
+  - label: "Aktualności"
+    name: "aktualnosci"
+    folder: "src/_data/aktualnosci"
+    create: true
+    format: yml
+    fields:
+      - {label: "Nagłówek", name: "title", widget: "string"}
+      - {label: "Data dodania", name: "date", widget: "datetime"}
+      - {label: "Treść", name: "body", widget: "markdown"}
   - label: "Strony"
     name: "pages"
     delete: false
@@ -62,11 +71,3 @@ collections:
         file: "src/_data/kontakt.yml"
         fields:
           - {label: "Treść", name: "body", widget: "markdown"}
-  - label: "Aktualności"
-    name: "aktualnosci"
-    folder: "src/_data/aktualnosci"
-    create: true
-    fields:
-      - {label: "Nagłówek", name: "title", widget: "string"}
-      - {label: "Treść", name: "body", widget: "string"}
-      - {label: "Zdjęcie", name: "image", widget: "image"}

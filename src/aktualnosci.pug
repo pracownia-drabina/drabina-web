@@ -1,0 +1,19 @@
+extends _layouts/base
+
+- var aktualnosci = site.data.aktualnosci.values().sort(function(a, b){ return b.date - a.date })
+
+block page_title
+  | Kontakt - 
+
+block metatags
+  meta(name='description', content='Zadzwoń i umów się na spotkanie. Terapia i sztuka. erapia  indywidualna oraz grupowa dla dzieci i młodzieży z trudnościami emocjonalnymi, zachowaniami trudnymi oraz z objawami ze spektrum autyzmu.')
+
+block content
+  .cover-art.short-cover
+
+  section.card.splash.splash-yellow.splash-right(style="min-height: 350px;")
+    .base-width.pure-g
+      each post, index in site.data.aktualnosci
+        .card-text.pure-u-1.pure-u-md-1
+          h2(class="circle-" + (['green', 'yellow', 'red'][index % 3]))= post.title
+          != marked(post.body)
