@@ -9,8 +9,8 @@ block metatags
 
 block content
   .cover-art.short-cover
-
-  - var posts = Object.values(site.data.aktualnosci).sort(function(a, b){ return b.date - a.date });
+  
+  - var posts = Object.values(site.data.aktualnosci || {}).sort(function(a, b){ return b.date - a.date });
   section.card.splash.splash-yellow.splash-right(style="min-height: 350px;")
     .base-width.pure-g
       each post, index in posts
