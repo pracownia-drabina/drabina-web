@@ -85,6 +85,9 @@ body
           a(href='/oferta.html') Oferta
         li
           a(href='/cennik.html') Cennik
+        if Object.keys(site.data.aktualnosci || {}).length > 0
+          li
+            a(href='/aktualnosci.html') Aktualności
         li
           a(href='/kontakt.html') Kontakt
 
