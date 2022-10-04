@@ -80,7 +80,7 @@ terapeuci:
   - imie: Martyna Chromik
     photo: images/uploads/img_20220106_181345-1-.jpg
     opis: >-
-      <!--\\\[if gte mso 9]><xml>
+      <!--\\\\[if gte mso 9]><xml>
        <w:WordDocument>
         <w:View>Normal</w:View>
         <w:Zoom>0</w:Zoom>
@@ -122,10 +122,10 @@ terapeuci:
          <m:intLim m:val="subSup"/>
          <m:naryLim m:val="undOvr"/>
         </m:mathPr></w:WordDocument>
-      </xml><!\\\[endif]-->
+      </xml><!\\\\[endif]-->
 
 
-      <!--\\\[if gte mso 9]><xml>
+      <!--\\\\[if gte mso 9]><xml>
        <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
         DefSemiHidden="true" DefQFormat="false" DefPriority="99"
         LatentStyleCount="267">
@@ -381,10 +381,10 @@ terapeuci:
         <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
         <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
        </w:LatentStyles>
-      </xml><!\\\[endif]-->
+      </xml><!\\\\[endif]-->
 
 
-      <!--\\\[if gte mso 10]>
+      <!--\\\\[if gte mso 10]>
 
       <style>
        /* Style Definitions */
@@ -415,7 +415,7 @@ terapeuci:
       	mso-bidi-theme-font:minor-bidi;}
       </style>
 
-      <!\\\[endif]-->
+      <!\\\\[endif]-->
 
 
       <!--StartFragment-->
@@ -427,7 +427,8 @@ terapeuci:
       Certyfikowana trenerka uważności dla dzieci i nastolatków Metodą Eline Snel: „Uwaga, to działa!”, nauczycielka w szkole podstawowej z kilkunastoletnim stażem, instruktorka Pilates, fitness dla dzieci oraz miłośniczką jogi i dobrej herbaty
 
 
-      Bycie uważnym to obszar, który w jej życiu zajmuje bardzo wiele przestrzeni. Uważność to dla niej klucz do szczęścia i tym kluczem z wielką chęcią otwiera „drzwi” najmłodszym - prowadząc treningi dla dzieci i nastolatków.\
+      Bycie uważnym to obszar, który w jej życiu zajmuje bardzo wiele przestrzeni. Uważność to dla niej klucz do szczęścia i tym kluczem z wielką chęcią otwiera „drzwi” najmłodszym - prowadząc treningi dla dzieci i nastolatków.
+
 
       <!--EndFragment-->
 
