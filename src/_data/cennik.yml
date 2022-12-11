@@ -1,9 +1,9 @@
 cenniki:
   - nazwa: Psychoterapia dzieci i młodzieży
     pozycje:
-      - nazwa: Terapia indywidualna (45min)
+      - nazwa: Terapia indywidualna (45 min)
         cena: 160zł
-      - nazwa: Konsultacja psychologiczna (50min)
+      - nazwa: Konsultacja psychologiczna (50 min)
         cena: 160zł
       - nazwa: Diagnoza psychologiczna
         cena: zależy od ilości spotkań konsultacyjnych
@@ -15,7 +15,7 @@ cenniki:
         cena: Cena do uzgodnienia
   - nazwa: Psychoterapia dorosłych
     pozycje:
-      - nazwa: Konsultacja psychoterapeutyczna (50min)
+      - nazwa: Konsultacja psychoterapeutyczna (50 min)
         cena: 160zł
-      - nazwa: Sesja psychoterapeutyczna (50min)
+      - nazwa: Sesja psychoterapeutyczna (50 min)
         cena: 160zł
