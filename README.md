@@ -37,3 +37,4 @@ After saving changes it will automatically create a new commit on a `master` bra
 ## Deployment
 
 Deployment to [pracowniadrabina.pl](https://pracowniadrabina.pl/) is done automatically on every merge to `master` branch using [Netlify](https://netlify.com)
+
