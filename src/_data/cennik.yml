@@ -19,3 +19,7 @@ cenniki:
         cena: 170 zł
       - nazwa: Sesja psychoterapeutyczna (50 min)
         cena: 170zł
+  - nazwa: Psychoterapia rodzin
+    pozycje:
+      - nazwa: Sesja psychoterapii rodzinnej (1,5 h)
+        cena: 350 zł
