@@ -5,14 +5,16 @@ cenniki:
         cena: 170zł
       - nazwa: Konsultacja psychologiczna (50 min)
         cena: 170zł
-      - nazwa: Diagnoza psychologiczna
-        cena: zależy od ilości spotkań konsultacyjnych
+      - nazwa: Konsultacja seksuologiczna
+        cena: 200 zł
       - nazwa: Opinia psychologiczna
         cena: 100zł
       - nazwa: Zajecia grupowe (1 godz.)
         cena: 100zł/os
       - nazwa: Warsztaty i szkolenia
         cena: Cena do uzgodnienia
+      - nazwa: Diagnoza psychologiczna
+        cena: zależy od ilości spotkań konsultacyjnych
   - nazwa: Psychoterapia dorosłych
     pozycje:
       - nazwa: Konsultacja psychoterapeutyczna (50 min)
