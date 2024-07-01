@@ -2,9 +2,9 @@ cenniki:
   - nazwa: Psychoterapia dzieci i młodzieży
     pozycje:
       - nazwa: Terapia indywidualna (45 min)
-        cena: 170zł
+        cena: 180zł
       - nazwa: Konsultacja psychologiczna (50 min)
-        cena: 170zł
+        cena: 180zł
       - nazwa: Konsultacja seksuologiczna
         cena: 200 zł
       - nazwa: Opinia psychologiczna
@@ -18,9 +18,9 @@ cenniki:
   - nazwa: Psychoterapia dorosłych
     pozycje:
       - nazwa: Konsultacja psychoterapeutyczna (50 min)
-        cena: 170 zł
+        cena: 180 zł
       - nazwa: Sesja psychoterapeutyczna (50 min)
-        cena: 170zł
+        cena: 180zł
   - nazwa: Psychoterapia rodzin
     pozycje:
       - nazwa: Sesja psychoterapii rodzinnej (1,5 h)
