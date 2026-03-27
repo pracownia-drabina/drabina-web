@@ -19,6 +19,20 @@ body: |-
 
   nr konta - 21116022020000000514696006
 
+  <a href="https://osrodek-terapii-i-rozwoju-drabina.reservio.com"
+     style="
+       display:inline-block;
+       background:#5690F5;
+       color:#fff;
+       padding:14px 28px;
+       border-radius:8px;
+       text-decoration:none;
+       font-weight:600;
+       font-size:16px;
+     ">
+     Zarezerwuj wizytę
+  </a>
+
   ```
 
   ```
