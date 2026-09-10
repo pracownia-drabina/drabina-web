@@ -23,7 +23,7 @@ cenniki:
         cena: 200zł
   - nazwa: Psychoterapia rodzin
     pozycje:
-      - nazwa: Sesja psychoterapii rodzinnej (1,5 h)
+      - nazwa: Sesja psychoterapii rodzinnej (75 min)
         cena: 400 zł
   - nazwa: Psychoterapia par
     pozycje:
