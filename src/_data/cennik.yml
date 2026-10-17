@@ -10,11 +10,11 @@ cenniki:
       - nazwa: Opinia psychologiczna
         cena: 100zł
       - nazwa: Zajecia grupowe (1 godz.)
-        cena: 120zł/os
+        cena: 150zł/os
       - nazwa: Warsztaty i szkolenia
         cena: Cena do uzgodnienia
-      - nazwa: Diagnoza psychologiczna
-        cena: zależy od ilości spotkań konsultacyjnych
+      - nazwa: TUS
+        cena: 120 zł
   - nazwa: Psychoterapia dorosłych
     pozycje:
       - nazwa: Konsultacja psychoterapeutyczna (50 min)
